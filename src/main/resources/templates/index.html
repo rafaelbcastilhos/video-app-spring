@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/styles.css" th:href="@{/css/styles.css}" />
+    <link rel="icon" href="../public/img/favicon.ico" th:href="@{/img/favicon.ico}" />
+    <title>Video App</title>
+</head>
+
+<body>
+<header th:replace="layout :: site-header"></header>
+<div class="container">
+
+    <h2>Video App</h2>
+
+    <p>Este aplicativo transmite conteúdo de vídeo S3 por HTTP usando a API Amazon S3 Java V2.<p>
+
+    <ol>
+        <li>Faça upload de vídeos MP4 para um bucket do Amazon S3, escolhendo o  <i>video</i>.</li>
+        <li>Preencha o formulário  e <i>envie</i>.</li>
+        <li>The application stores the video in an Amazon S3 bucket.</li>
+        <li>Você pode assistir um conteúdo escolhendo um<i>video</i>.
+        <li>Em seguida, escolha o video clicando no título.</li>
+    </ol>
+</div>
+</body>
+</html>
