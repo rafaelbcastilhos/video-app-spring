@@ -1,0 +1,17 @@
+---
+files:
+  - path: src/main/java/application/Application.java
+    services:
+      - S3
+  - path: src/main/java/application/ApiController.java
+    services:
+      - S3
+  - path: src/main/java/model/TagsModel.java
+    services:
+      - S3
+  - path: src/main/java/service/S3Service.java
+    services:
+      - S3
+  - path: src/main/java/service/VideoService.java
+    services:
+      - S3
